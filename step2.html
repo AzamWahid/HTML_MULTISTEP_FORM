@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav {
+            font-size: 0;
+            /* Remove gaps between inline-block elements */
+        }
+
+        .nav a {
+            font-size: 16px;
+            /* Reset font-size to the desired size */
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            /* color: white; */
+            /* background-color: #333; */
+            background-color: #DCDCDC;
+            color: #000;
+        }
+
+        .nav .active {
+            background-color: #7CA5C2;
+        }
+
+        .nav a:hover {
+            background-color: #cbda46dc;
+        }
+
+        .nav .done {
+            background-color: #c2df94;
+        }
+
+
+
+        .nor-input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            width: 31%;
+        }
+
+        .cnic-input {
+            /* display: flex; */
+            align-items: center;
+            gap: 2px;
+            width: 2%;
+            margin-bottom: 10px;
+
+        }
+
+        .cnic-input input {
+            width: 2px;
+            text-align: center;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        .cnic-input span {
+            font-size: 16px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="./step1.html" class="done">Step 1: Account</a>
+        <a href="./step2.html" class="active">Step 2: Personal Details</a>
+        <a href="./step3.html" class="">Step 3: Your Review</a>
+    </nav>
+
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="">First Name:</label><br>
+        <input type="text" placeholder="Enter First Name" name="fName" class="nor-input" required><br>
+        <label for="">Last Name:</label><br>
+        <input type="text" placeholder="Enter Last Name" name="lName" class="nor-input" required><br>
+        <label for="">CNIC:</label><br>
+        <input type="text" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit2" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit3" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit4" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit5" maxlength="1" class="cnic-input" required>
+        <span>-</span>
+        <input type="text" id="digit6" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit7" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit8" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit9" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit10" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit11" maxlength="1" class="cnic-input" required>
+        <input type="text" id="digit12" maxlength="1" class="cnic-input" required>
+        <span>-</span>
+        <input type="text" id="digit13" maxlength="1" class="cnic-input" required><br>
+
+        <label for="">Social Link:</label><br>
+        <input type="text" placeholder="Enter Facebool/Linkedin profile Link" name="socialLink" class="nor-input" required><br>
+
+        <a href="./step1.html"><img src="./assets/backPage.png" alt="" width="40%"></a>
+        <a href="./step3.html"><img src="./assets/nextPage.png" alt="" width="40%"></a>
+    </fieldset>
+</body>
+
+</html>

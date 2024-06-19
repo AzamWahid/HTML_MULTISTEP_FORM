@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav {
+            font-size: 0;
+            /* Remove gaps between inline-block elements */
+        }
+
+        .nav a {
+            font-size: 16px;
+            /* Reset font-size to the desired size */
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            /* color: white; */
+            /* background-color: #333; */
+            background-color: #DCDCDC;
+            color: #000;
+        }
+        .nav .active {
+            background-color: #7CA5C2;
+        }
+
+        .nav a:hover {
+            background-color: #c2df94;
+        }
+        .nav .done {
+            background-color: #c2df94;
+        }
+      
+
+       
+        .input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        fieldset {
+            width: 31%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="./step1.html" class="done">Step 1: Account</a>
+        <a href="./step2.html"  class="done" >Step 2: Personal Details</a>
+        <a href="./step3.html" class="active">Step 3: Your Review</a>
+    </nav>
+
+    <fieldset>
+        <legend>Account</legend>
+        <label for="">Email Address:</label><br>
+        <input type="email" placeholder="Enter Email" name="email" class="input" required><br>
+        <label for="">Password:</label><br>
+        <input type="password" placeholder="Enter Password" name="pass" class="input" required><br>
+        <label for="">Confirm Password:</label><br>
+        <input type="password" placeholder="Enter Confirm Password" name="cnfrmPass" class="input" required>
+
+        <a href="./step2.html"><img src="./assets/backPage.png" alt="" width="40%"></a>
+        <a href="./Thankyou.html"><img src="./assets/nextPage.png" alt="" width="40%"></a>
+    </fieldset>
+</body>
+
+</html>
